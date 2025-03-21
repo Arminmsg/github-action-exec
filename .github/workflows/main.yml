@@ -11,10 +11,12 @@ jobs:
       - name: Import Secrets using CyberArk Conjur Secret Fetcher Action
         uses: Arminmsg/action-test@23fa220340ff99dea47e2955f8aa4a0bd3911f24
         with:
-          secrets: db/sqlusername|sql_username;db/sql_password;
+          secrets: db/sqlusername|sql_username;db/sql_password;data/vault/Armin-conjur/Operating System-WinDesktopLocal-test-123/address|address
       - name: Multiline
         uses: Arminmsg/action-test@23fa220340ff99dea47e2955f8aa4a0bd3911f24
         with:
           secrets: |
             db/sqlusername|sql_username;
-            db/sql_password
+            db/sql_password;
+            data/vault/Armin-conjur/Operating System-WinDesktopLocal-test-123/address|address;
+            data/vault/Armin-conjur/Operating System-WinDesktopLocal-test-123/address|address;
