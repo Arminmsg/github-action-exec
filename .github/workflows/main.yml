@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Import Secrets using CyberArk Conjur Secret Fetcher Action
-        uses: Arminmsg/action-test@01117117a677e7e86987ee798d2a961b64aeae7c
+        uses: Arminmsg/action-test@3f5f920bd613e419d25321b14f54a0a6ff9d60a3
         with:
           secrets: db/sqlusername|sql_username;db/sql_password;
       - name: Multiline
-        uses: Arminmsg/action-test@01117117a677e7e86987ee798d2a961b64aeae7c
+        uses: Arminmsg/action-test@3f5f920bd613e419d25321b14f54a0a6ff9d60a3
         with:
           secrets: |
             db/sqlusername|sql_username;
